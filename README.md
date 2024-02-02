@@ -12,11 +12,12 @@ First of all, we need to install the react-router-dom package. This package will
 npm install react-router-dom
 ```
 ## Iteration 2 - Create the Home page
-Create a new component called `HomePage.jsx` in the `src/pages` folder. This component will be the home page of our application.
+Create a new component called `HomePage.jsx` in the `src/pages` folder (create also the folder 🫡). This component will be the home page of our application.
 Display a welcome message and a link to the characters page `/characters`.
+Remember how to create a link in react using the react-router-dom? 🤔
 
 ## Iteration 3 - Create the Characters and CharacterDetails pages
-Create a new component called `CharactersPage.jsx` in the `src/pages` folder. This component will be the characters page of our application. For now, they will only display a title:
+Create two new components called `CharactersPage.jsx` and `CharacterDetailsPage.jsx` in the `src/pages` folder. This components will have functionality to display the characters and the details of a single character, respectively. For now, let's just display a title:
 
 ```jsx
 // src/pages/CharactersList.jsx
@@ -42,8 +43,8 @@ function CharacterDetailsPage() {
 In the App.js file, create the routes for the following paths:
 
 - `/` - Home page
-- `/characters` - Characters page with the elements of the `CharactersPage` component
-- `/characters/:id` - Character detail page with the elements of the `CharacterDetailsPage` page component
+- `/characters` - Characters page with the element of the `CharactersPage` component
+- `/characters/:id` - Character detail page with the element of the `CharacterDetailsPage` page component.
 
 Now we should be able to navigate between the different pages of our application.
 Let's create a navbar!
