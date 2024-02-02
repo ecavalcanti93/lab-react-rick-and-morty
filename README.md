@@ -16,11 +16,11 @@ Create a new component called `HomePage.jsx` in the `src/pages` folder. This com
 Display a welcome message and a link to the characters page `/characters`.
 
 ## Iteration 3 - Create the Characters and CharacterDetails pages
-Create a new component called `CharacterList.jsx` in the `src/pages` folder. This component will be the characters page of our application. For now, they will only display a title:
+Create a new component called `CharactersPage.jsx` in the `src/pages` folder. This component will be the characters page of our application. For now, they will only display a title:
 
 ```jsx
-// src/pages/CharacterList.jsx
-function CharacterList() {
+// src/pages/CharactersList.jsx
+function CharactersList() {
   return (
     <div>
       <h1>Characters</h1>
@@ -28,8 +28,8 @@ function CharacterList() {
   );
 }
 
-// src/pages/CharacterDetails.jsx
-function CharacterDetails() {
+// src/pages/CharacterDetailsPage.jsx
+function CharacterDetailsPage() {
   return (
     <div>
       <h1>Character Details</h1>
@@ -42,8 +42,8 @@ function CharacterDetails() {
 In the App.js file, create the routes for the following paths:
 
 - `/` - Home page
-- `/characters` - Characters page with the elements of the `CharacterList` component
-- `/characters/:id` - Character detail page with the elements of the `CharacterDetails` component
+- `/characters` - Characters page with the elements of the `CharactersPage` component
+- `/characters/:id` - Character detail page with the elements of the `CharacterDetailsPage` page component
 
 Now we should be able to navigate between the different pages of our application.
 Let's create a navbar!
