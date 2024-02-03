@@ -1,4 +1,4 @@
-# Rick and Morty LAB
+# Rick and Morty's LAB
 
 ![Image Description](https://i.pinimg.com/originals/29/bd/26/29bd261d201e956588ee777d37d26800.gif)
 
@@ -81,6 +81,11 @@ You can also use axios to fetch the data, but remember to install it first.
   <p>The endpoint to get all characters is <code>https://rickandmortyapi.com/api/character</code></p>
 
 </details>
+<details>
+  <summary>Preview</summary>
+    <img src="./src/assets/characterspage.png">
+</details>
+<br>
 
 Each character should be displayed in a card. The card should contain the following information:
 
@@ -100,6 +105,12 @@ In the `CharacterDetails` component, create a state variable called `character` 
   <p>The endpoint to get a single character is <code>https://rickandmortyapi.com/api/character/:id</code></p>
 </details>
 
+<details>
+  <summary>Preview</summary>
+    <img src="./src/assets/details.png">
+</details>
+<br>
+
 The character detail page should contain the following information:
 
 - Image
@@ -109,12 +120,19 @@ The character detail page should contain the following information:
 - Origin planet
 - Number of episodes where the character appears
 
-## BONUS! Iteration 8 - Create the SearchBar
-Create a new component called `SearchBar.jsx` in the `src/components` folder. This component will be the search bar of our application. It will contain an input and a button.
+## BONUS 1 - Add styles
+Add some styles to your application to make it look pretty. For this lab let's practice with plain CSS. Create a css file for each component and import it in the component file.
+Remember to use the `className` attribute to apply the styles to the elements.
+Keep in mind that all the styles you apply to the components will be global in the application. So, try to use unique class names for each component.
+
+More general styles can be applied in the `index.css` file.
+
+## BONUS 2 - Create the SearchBar
+Create a new component called `SearchBar.jsx` in the `src/components` folder. This component will be the search bar of our application. It will contain an input.
 
 The searchBar should be displayed in the CharacterList page. When the user types a name in the input the results should be filtered and displayed in the CharacterList page without reloading the page or making a new request to the API. (like we did in the nutrition lab). 
 
-Remember what `lifting state up` means? We need pass the state as a prop to the SearchBar component. We also need to pass a function to the SearchBar component that will update the state in the CharacterList component.
+Remember what `lifting state up` means? We need pass the state as a prop to the SearchBar component. We also need to pass a function to the SearchBar component that will update the state in the CharacterList component. 
 
 <details>
   <summary>Hint</summary>
