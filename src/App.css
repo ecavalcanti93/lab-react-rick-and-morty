@@ -1,0 +1,139 @@
+* {
+
+    vertical-align:baseline;
+    list-style:none;
+    border:0
+    }
+
+body {
+    margin: 0;
+    display: flex;
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+    background-image: url("../src/assets/bg.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+h1, h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.text-welcome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; 
+}
+
+.cards{
+    position: relative;
+    width: 200px;
+    height: 350px;
+    margin: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.125);  
+    filter: drop-shadow(0 30px 10px rgba(0,0,0,0.125));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar{
+    background-color: rgb(57, 255, 20);
+    color: rgb(218, 0, 218);
+    height: 40px;
+}
+
+img{
+    padding-top: 20px;
+}
+
+button{
+    background-color: rgb(57, 255, 20);
+    border-radius: 5px;
+    width: 70px;
+    height: 25px;
+    border-style: none;
+    align-items: center;
+    cursor: pointer;
+}
+
+p{
+    color:  rgb(57, 255, 20);
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h6 {
+    display: flex;
+    color: rgb(176, 38, 255);
+    padding-top: 10px;
+    padding-left: 50px;
+}
+
+.box {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.linkbtn{
+        background-color: rgb(57, 255, 20);
+        border-radius: 5px;
+        width: 100px;
+        height: 25px;
+        border-style: none;
+        align-items: center;
+        cursor: pointer;
+        color: black;
+        margin-top: 20px;
+}
+
+.btnstyle{
+    color: rgb(176, 38, 255);
+    font-weight: 500;
+}
+
+.text-welcome h2 {
+    margin-top: 0;
+}
+
+.text{
+    width: 100vw;
+}
+
+.card-detailed{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    background-color: white;
+    color: black;
+    width: 50%;
+}
